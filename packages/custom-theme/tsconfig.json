@@ -1,0 +1,18 @@
+{
+  "extends": "tsconfig/react-library.json",
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "ESNext",
+    "baseUrl": "./src",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "resolveJsonModule": true
+  }
+}

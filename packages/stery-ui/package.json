@@ -1,0 +1,31 @@
+{
+  "name": "@stery-ui/react",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsup --onSuccess ./scripts/copy",
+    "dev": "tsup --watch --onSuccess ./scripts/copy"
+  },
+  "files": [
+    "datepicker.cjs",
+    "datepicker.js",
+    "datepicker.d.ts",
+    "card-input.cjs",
+    "card-input.js",
+    "card-input.d.ts"
+  ],
+  "devDependencies": {
+    "@types/payment": "^2.1.4",
+    "tsup": "^6.5.0"
+  },
+  "dependencies": {
+    "payment": "^2.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

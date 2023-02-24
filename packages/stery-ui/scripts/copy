@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+FILES="datepicker card-input index chunk*"
+FORMATS="cjs cjs.map js.map js d.ts"
+
+echo "Cleaning files..."
+for file in $FILES
+do
+    for format in $FORMATS
+    do
+        if [ -f "$file.$format" ]; then
+            rm "$file.$format"
+        fi
+    done
+done
+echo "Copying files..."
+cp ./dist/* ./
+
